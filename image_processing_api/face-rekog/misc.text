@@ -1,0 +1,50 @@
+
+response = client.compare_faces(
+    SourceImage={
+        'Bytes': b'bytes',
+        'S3Object': {
+            'Bucket': 'string',
+            'Name': 'string',
+            'Version': 'string'
+        }
+    },
+    TargetImage={
+        'Bytes': b'bytes',
+        'S3Object': {
+            'Bucket': 'string',
+            'Name': 'string',
+            'Version': 'string'
+        }
+    },
+    SimilarityThreshold=...
+)
+
+
+ """
+        response = client.detect_labels(
+                                        Image={
+                                        'Bytes': b'bytes',
+                                        'S3Object': {
+                                        'Bucket': 'string',
+                                        'Name': 'string',
+                                        'Version': 'string'
+                                        }
+                                        },
+                                        MaxLabels=123,
+                                        MinConfidence=...
+                                        
+        
+        
+        
+        imageString:    s3://somepath
+        
+        locationString:    conference room
+        
+        location_dateString:    11-29-2017
+        
+        location_timeString:    09-00-00
+        
+        metadataString:    {\"something\" : \"score\"}
+        
+        userString:
+        """
